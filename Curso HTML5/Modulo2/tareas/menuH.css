@@ -1,0 +1,57 @@
+body {
+  background-color: rgba(026,026,026, 0.75);
+  color: #008AAA;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1 {
+  border: 1px solid #046;
+  background-color: rgba(0,0,0,0.2);
+  //box-shadow: 0px 0px 5px 2px;
+  padding: 5px 8px 5px 8px;
+  
+}
+
+h1:hover {
+ background-color: rgba(0,0,0, 0.5);
+ box-shadow: 0px 0px 5px 5px;
+ display: block-inline;
+
+
+}
+
+nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 0px;
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+li {
+  display: inline;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #008AAA;
+  display: block;
+  background-color: rgba(0,0,0,0.20);
+  padding: 10px;
+  font-variant: all-small-caps;
+}
+
+a:hover {
+  background-color: rgba(0,0,0, 0.5);
+  box-shadow: 0px 0px 5px 5px;
+}

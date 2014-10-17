@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>My flex page</title>
+	<style type="text/css">
+	body, html {
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#content {
+		height: 80%;
+		display: -webkit-flex;
+		display: flex;
+		flex-flow: row;
+	}
+
+	#content nav {
+		background-color: green;
+		flex: 1 6 20%;
+		order: 1;
+	}
+
+	#content article {
+		background-color: white;
+		flex: 3 1 60%;
+		order: 2;
+	}
+
+	#content aside {
+		background-color: blue;
+		flex: 1 6 20%;
+		order: 3;
+	}
+
+	header, footer {
+		display: block;
+		min-height: 10%;
+		background-color: yellow;
+	}
+
+	</style>
+
+</head>
+<body>
+<header>Main page</header>
+<div id="content">
+<nav>Menu type</nav>
+<article>The main articles</article>
+<aside>Related info</aside>
+</div>
+<footer>Some footer</footer>
+</body>
+</html>

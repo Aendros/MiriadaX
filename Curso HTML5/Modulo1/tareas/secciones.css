@@ -1,0 +1,25 @@
+
+            body {
+                width: 550px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 14px;
+                font-family: Roboto, Helvetica, sans;
+                background-color: #f4f4f4;
+            }
+
+            header {
+                display: block;
+                text-align: center;
+            }
+
+             nav {
+                 text-align: center;
+                 background-color: #999;
+                 border-radius: 3px;
+             }
+                
+         
+
+
+        
