@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="BorjaIR" content="autor">
+	<title>Acierta el número</title>
+</head>
+<body>
+	<header><h1>Acierta el número</h1></header>
+	<script type="text/javascript">
+		var num = function  () {
+			var calc = Math.ceil(Math.random() * 3);
+			return calc; 
+		}
+		var apuesta = num();
+		var intento = prompt("Introduzca un número al azar \n (输入一个随机数)");
+
+		if (intento > 3 || intento < 1) {
+			document.write("Debe contestar sólo 1, 2 o 3 <br> (你必须回答只有1，2或3)");
+		}
+		else if(intento == apuesta) {
+			document.write("Correcto <br> (右)");
+		}
+		else {
+			document.write("Lo siento, el número era: " + apuesta + "<br>" + "(对不起，该号码是： " + apuesta + ")");
+		}
+	</script>
+</body>
+</html>
