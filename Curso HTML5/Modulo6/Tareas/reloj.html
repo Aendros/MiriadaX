@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="BorjaIR" content="autor">
+	<title>Módulo 6: Reloj</title>
+	<script type="text/javascript">
+	function mostrar_hora() {
+		var fecha = new Date();
+		var donde = document.getElementById('hora');
+		donde.innerHTML = fecha.getHours() + " horas " + fecha.getMinutes() + " minutos " + fecha.getSeconds() + " segundos " + fecha.getMilliseconds() + " milisegundos ";
+		var donde = document.getElementById('hora');
+		hora.addEventListener('click', mostrar_hora);
+	}
+	</script>
+</head>
+<body onload="mostrar_hora()">
+	<header><h1>Módulo 6: Reloj</h1></header>
+	<content>
+	<article>
+		<h4>
+		La hora es: <span id="hora"></span>
+		</h4>
+	</article>
+	</content>
+
+</body>
+</html>

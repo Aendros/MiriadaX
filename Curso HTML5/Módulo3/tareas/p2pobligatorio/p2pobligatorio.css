@@ -1,0 +1,137 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	background-color: #e4eaec;
+	font-size: 0.9em;
+}
+
+header h1 {
+	display: block;
+	min-height: 10%;
+	text-align: center;
+	font-variant: small-caps;
+	box-shadow: inset 1px 1px 20px 13px #998;
+	border: 1px solid #BBB;
+	border-radius: 2px;
+	color: white;
+	text-shadow: 1px 1px #321;
+}
+
+
+#content {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #ece9e4;
+	color: black;
+	border-radius: 5px;
+	border: 1px solid #DDD;
+	display: -webkit-flex;
+	display:flex;
+	flex-flow: row;
+	
+}
+
+#principal h3 {
+	font-variant: small-caps;	
+}
+
+#principal h4 {
+	box-shadow:  -7px 0px #A99;
+	padding-left: 5px;
+}
+
+ul {
+	box-shadow:  -5px 0px #688;
+	margin-top: -15px;
+	list-style-type: none;
+	padding-left: 10px;
+	font-size: 0.9em;
+}
+
+#foto {
+	max-width: 100px;
+	width: 25%;
+	float: left;
+	margin: -50px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	box-shadow: 1px 1px 5px 3px #111;
+}
+
+#comments {
+	width: 80%;
+	margin: 1em;
+	text-align: justify;
+}
+
+#autor {
+	margin-top: 0px;
+	text-align: left;
+	font-size: 0.7em;
+	color: #777;
+	font-style: oblique;	
+}
+
+#comentario {
+	padding: 25px;
+	background-color: #CCC;
+	border: 2px solid rgba(255, 255, 2555, 0.6);
+	color: black;
+	border-radius: 5px;
+}
+
+#principal {
+	-webkit-flex: 1 6 70%;
+	flex: 1 6 70%;
+	order: 1;
+}
+
+#resumen {
+	padding: 0px 10px 0px 70px;
+	text-align: justify;
+}
+
+aside {
+	box-shadow: inset 3px 0px 50px #CCB;
+	-webkit-flex: 1 6 30%;
+	flex: 1 6 30%;
+	order: 2;
+	margin: 10px;
+	padding: 5px;
+	font-size: 0.7em;
+}
+
+aside > header {
+	border-bottom: 1px solid #000;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+#Favorito header {
+	margin: 10px 0px 10px 0px;
+	font-size: 1.5em;
+	font-style: oblique;
+	box-shadow: inset 0px 1px 1px 1px #CCC;
+	border-radius: 3px;
+	background-color: #CCC
+}
+
+#Favorito p {
+	text-align: justify;
+	padding: 0px 10px 0px 10px;
+	font-style: oblique;
+	color: #555;
+}
+
+audio {
+	margin: 5px 0px 10px 0px;
+	width: 90%;
+}
+
+#site {
+	width: 90%;
+	
+}

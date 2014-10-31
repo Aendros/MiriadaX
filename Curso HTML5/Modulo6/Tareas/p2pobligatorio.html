@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="BorjaIR" content="autor">
+	<title>Modulo 6: Propiedades de objetos.</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+		}
+
+		table {
+			padding: 0px;
+			margin: 0px auto;
+			border-spacing: 0px;
+			font-size: 0.8em;
+			border-top-width: 1px;
+			border-top-style: solid;
+			border-top-color: #333;
+			border-left: 1px solid #333;
+			border-right: 1px solid #333;
+		}
+		th, td {
+			padding: 0.5em;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #333;
+		}
+		th {
+			background-color: #aec7f4;
+			min-width: 20%;
+		}
+		td {
+			background-color: #aed8f4;
+			min-width: 20%;
+		}
+	</style>
+	<script type="text/javascript">
+		var evalO = '';
+		function ask() {
+			evalO = prompt('Introduce el nombre de un objeto');
+			if (evalO.search("this.") != -1) { evalO = evalO.substring(5);}
+			if(window.hasOwnProperty(evalO) || evalO == "window") printTable(evalO);
+			else {
+				var temp0 = document.getElementById('tabla');
+				temp0.innerHTML = "Lo siento, el valor introducido no pertenece a un objeto válido.";
+			}
+		}
+
+		function printTable(evalO) {
+			var temp0 = document.getElementById('queObjeto');
+			temp0.innerHTML = evalO;
+			var temp1 = document.getElementById('tabla');
+			temp1.innerHTML = "<tr><th>Propiedad</th><th>Valor</th></tr>"
+			for (i in eval(evalO)) {
+				if(typeof(eval(evalO)[i])  !== 'object' && typeof(eval(evalO)[i])  !== 'function') temp1.innerHTML += "<tr><th>" + i +" </th><td>" + eval(evalO)[i] + "</td></tr>" ;
+				else {
+					temp1.innerHTML += "<tr><th>" + i +" </th><td>" + "No es imprimilbe</td></tr>";
+				}
+			}
+		}
+
+	</script>
+</head>
+<body onLoad="ask()">
+	<header><h1>Módulo 6: Propiedades de objetos</h1></header>
+	<section id="contenido">
+		<article>
+			<header>
+				<h4>Propiedades del objeto: <span id="queObjeto"></span></h4>
+			</header>
+			<div id="divtabla">
+				<table id="tabla">
+
+
+				</table>
+			</div>
+		</article>
+	</section>
+
+</body>
+</html>
