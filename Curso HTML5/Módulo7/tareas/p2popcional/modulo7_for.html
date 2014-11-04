@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="BorjaIR" content="autor">
+    <title>Módulo7: p2p opcional</title>
+    <style type="text/css" media="screen">
+        body {
+            padding: 0px;
+            margin: 0 auto;
+            text-align: center;
+            min-width: 250px;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #262626;
+            border: 1px solid #111;
+            box-shadow: 1px 1px 1px 1px #911;
+            padding: 10px;
+            border-radius: 7px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        function ask() {
+            var result = 0;
+            var text = "";
+            var salir = true;
+            for ( ; salir; ) {
+                var value = prompt('Introduce un valor para comenzar a sumar' + text);
+                if (isNaN(parseInt(value)) && value != 'acabar') {
+                    alert("Entrada errónea, vuelva a intentarlo");
+                }
+                else if (value != 'acabar') {
+                    value = parseInt(value);
+                    result = result + value;
+                    text = "\nEl resultado obtenido hasta ahora es: " + result + "\nContinue introduciendo números o escribar acabar";
+                }
+                else {
+                    salir = false;
+                }
+            }
+        }
+    </script>
+  </head>
+  <body onload="ask()">
+      <header>
+          <h1>Módulo7: p2p opcional</h1>
+      </header>
+      <div id="content">
+          <a href="index.html">¿Quieres volver a la primera parte del ejercicio?</a>
+      </div>
+  </body>
+</html>
