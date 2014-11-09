@@ -132,6 +132,9 @@ audio {
 }
 
 #site {
+	width: 90%;	
+}
+
+video {
 	width: 90%;
-	
 }
