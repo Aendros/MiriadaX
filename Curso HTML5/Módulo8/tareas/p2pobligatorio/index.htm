@@ -3,6 +3,31 @@
 <head><title>Cronómetro</title><meta charset="UTF-8">
 <script type="text/javascript" src="zepto.min.js" > </script>
 <script type="text/javascript" src="touch.js"></script>
+<style type="text/css">
+body {
+	padding: 0px;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+#cronometro {
+	margin: 0 auto;
+	padding-bottom: 15px;
+	background-image: url('./cronometro.jpg');
+	background-repeat: no-repeat;
+	background-size: 150px 150px;
+	width: 150px;
+	height: 150px;
+}
+
+#crono {
+	position: absolute;
+	margin: 50px 60px 0px 0px;
+}
+ul {
+	display: inline-block;
+}
+</style>
 <script type="text/javascript">
   $(function(){
     localStorage.c = (localStorage.c || "0.0");
@@ -37,8 +62,9 @@
 <body>
 <h2>Cronómetro</h2>
 
-<h3><span id="crono"> 0.0 </span> segundos </h3>
-
+<div id="cronometro">
+<span id="crono"> 0.0 </span>
+</div>
 <button type="button" id="cambiar"> arrancar/parar </button>
 <button type="button" id="inicializar">  inicializar </button>
 <div id="list">
