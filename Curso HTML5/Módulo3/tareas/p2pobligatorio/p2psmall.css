@@ -7,7 +7,7 @@
 	border: 1px solid #DDD;
 	display: -webkit-flex;
 	display:flex;
-	flex-flow: column;
+	flex-wrap: wrap;
 	
 }
 
