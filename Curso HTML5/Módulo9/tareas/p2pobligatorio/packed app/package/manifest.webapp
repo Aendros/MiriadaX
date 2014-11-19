@@ -1,0 +1,16 @@
+{
+  "name": "Crono",
+  "version": "0.1",
+  "description": "Crono simple",
+  "launch_path": "/clock.htm",
+  "icons": {
+    "128": "/crono-128.png",
+    "256": "/crono-256.png",
+    "512": "/crono-512.png"
+  },
+  "developer": {
+    "name": "BorjaIR",
+    "url": "https://www.miriadax.net"
+  },
+  "default_locale": "es"
+}

@@ -1,0 +1,15 @@
+{
+  "version": "0.1",
+  "name": "Mi Reloj",
+  "description": "Reloj simple",
+  "launch_path": "/host/0B6sc_euHI_bTNmktLWJwd25qSWs/clock.htm",
+  "icons": {
+    "128": "/host/0B6sc_euHI_bTNmktLWJwd25qSWs/crono-128.png",
+    "256": "/host/0B6sc_euHI_bTNmktLWJwd25qSWs/crono-256.png"
+  },
+  "developer": {
+    "name": "BorjaIR",
+    "url": "https://www.miriadax.net"
+  },
+  "default_locale": "es"
+}
