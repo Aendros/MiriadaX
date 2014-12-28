@@ -1,0 +1,20 @@
+{
+  "version": "0.1",
+  "name": "Location",
+  "description": "Creación de rutas",
+  "launch_path": "/location.html",
+  "icons": {
+    "128": "/location-128.png",
+    "256": "/location-256.png"
+  },
+  "developer": {
+    "name": "BorjaIR",
+    "url": "https://www.miriadax.net"
+  },
+  "default_locale": "es",
+  "permissions": {
+  "geolocation": {
+  "description": "Obtain the current location of the user."
+  }
+  }
+}
