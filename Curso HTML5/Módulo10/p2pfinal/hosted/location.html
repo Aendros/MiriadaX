@@ -99,7 +99,18 @@
         localStorage.clear(pos);
         location.reload();
         getpos();
-      }
+      };
+
+      function compactar() {
+        if(localStorage.pos){
+          pos.splice(1, pos.length -2);
+          localStorage.pos = JSON.stringify(pos);
+          cargaRuta();
+        }
+        else{
+          alert("De momento no hay nada que compactar");
+        }
+      };
 
       if(localStorage.pos){
         cargaRuta();
@@ -109,7 +120,8 @@
       }
 
       //Botón para limpiar localStorage
-      $('button').on('click', limpiar);
+      $('#limpiar').on('click', limpiar);
+      $('#compactar').on('click', compactar);
     });
 
   </script>
@@ -117,7 +129,8 @@
 <body>
   <h1>Geolocalización</h1>
   <div>
-    <button type="button" onclick="limpiar()">Limpiar localStorage</button>
+    <button type="button" id="limpiar">Limpiar localStorage</button>
+    <button type="button" id="compactar">Compactar</button>
   </div>
   <div id="map"></div>
 </body>
